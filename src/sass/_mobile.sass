@@ -1,0 +1,54 @@
+@media screen and (max-width: 620px)
+    .grid-2, .grid-3, .grid-5
+        grid-template-columns: 1fr
+    nav
+        padding: 1rem 0
+        img
+            height: 1.5rem
+        ul
+            padding: 0
+            li a
+                margin-left: 1rem
+                font-size: 0.9rem
+    header
+        background-image: url("./images/bg-curvy-mobile.svg")
+        padding-bottom: 5rem
+        img
+            width: 100%
+        .header-text
+            width: 100%
+            h1
+                font-size: 1.7rem
+            p
+                width: 100%
+    #productive
+        img
+            width: 100%
+            margin-left: 0.5rem
+        .productive-text h2
+            width: 100%
+            font-size: 1.7rem
+        a
+            display: flex
+            align-items: center
+            text-decoration: none
+            border-bottom: solid 1px $cyan
+            width: 38%
+            img
+                width: 10%
+    #testimonials
+        .grid-3
+            margin-top: -2rem
+        .card-testimonial
+            margin-top: 1rem
+    #footer
+        .subs-form
+            width: 80%
+            form
+                flex-direction: column
+            input
+                &[type=email]
+                    width: 75%
+                &[type=submit]
+                    width: 100%
+                    margin-left: 0

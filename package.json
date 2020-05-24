@@ -1,0 +1,12 @@
+{
+  "name": "fylo-dark-theme",
+  "version": "1.0.0",
+  "description": "A fornt-end excersice from FrontEnd Mentor",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/sass/main.sass:public/styles.css"
+  },
+  "keywords": [],
+  "author": "Karen Gil",
+  "license": "ISC"
+}

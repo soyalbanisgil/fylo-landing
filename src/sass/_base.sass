@@ -1,0 +1,48 @@
+body
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    background-color: $main-bg-color
+    color: #fff
+    font-family: $body-font
+    overflow-x: hidden
+
+h1, h2, h3, a, .btn
+    font-family: $heading-font
+
+.container
+    width: 90%
+    max-width: 90%
+    margin: 0 auto
+
+.btn
+    background-image: linear-gradient(to right, $cyan, $blue)
+    color: #fff
+    border: none
+    border-radius: 30px
+    padding: 1rem 5rem
+
+.flex
+    display: flex
+    &.space-btw
+        justify-content: space-between
+        align-items: center
+    &.space-ard
+        justify-content: space-around
+    &.center
+        justify-content: center
+
+.grid-2
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 1rem
+
+.grid-3
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 1rem
+
+.grid-5
+    display: grid
+    grid-template-columns: 25rem 15rem 7rem 9rem auto
+    gap: 3rem

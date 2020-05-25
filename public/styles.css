@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -20,12 +24,22 @@ h1, h2, h3, a, .btn {
   margin: 0 auto;
 }
 
+li a:hover {
+  color: #65e2d9;
+  text-decoration: underline;
+}
+
 .btn {
   background-image: linear-gradient(to right, #65e2d9, #339ecc);
   color: #fff;
   border: none;
   border-radius: 30px;
   padding: 1rem 5rem;
+  font-weight: 700;
+}
+.btn:hover {
+  background-image: linear-gradient(to right, #339ecc, #65e2d9);
+  cursor: pointer;
 }
 
 .flex {
@@ -71,6 +85,11 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   margin-left: 3rem;
+  transition: all 700ms ease;
+}
+nav ul li a:hover {
+  color: #65e2d9;
+  text-decoration: underline;
 }
 
 header {
@@ -108,9 +127,15 @@ header .header-text p {
   text-align: center;
   width: 350px;
   margin: 1.5rem auto;
+  transition: all 0.5s ease-in-out;
 }
 #features .card img {
   height: 5rem;
+}
+#features .card:hover {
+  transform: translateY(-2rem);
+  background-color: #1c2431;
+  padding: 1rem;
 }
 
 #productive {
@@ -198,6 +223,12 @@ header .header-text p {
 }
 #footer .subs-form input::placeholder {
   color: #d3d3d3;
+}
+#footer .subs-form input.valid {
+  border: solid 2px green;
+}
+#footer .subs-form input.invalid {
+  border: solid 2px red;
 }
 #footer .menu-bottom {
   margin-top: 2.5rem;

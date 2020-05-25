@@ -26,9 +26,9 @@
       <div class="container flex space-btw">
         <img src="./images/logo.svg" alt="logo fylo" />
         <ul class="main-nav flex">
-          <li><a href="#">Features</a></li>
+          <li><a href="#features">Features</a></li>
           <li><a href="#">Team</a></li>
-          <li><a href="#">Sign In</a></li>
+          <li><a href="#signin">Sign In</a></li>
         </ul>
       </div>
     </nav>
@@ -166,7 +166,7 @@
 
     <section id="footer">
       <div class="container">
-        <div class="subs-form">
+        <div class="subs-form" id="signin">
           <h2>Get early access today</h2>
           <p>
             It only takes a minute to sign up and our free starter tier is
@@ -174,7 +174,12 @@
             would be happy to help you.
           </p>
           <form class="flex center">
-            <input type="email" placeholder="email@example.com" />
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+            />
             <input class="btn" type="submit" value="Get Started For Free" />
           </form>
         </div>
@@ -242,5 +247,7 @@
         >. Coded by <a href="#">Karen Gil</a>.
       </p>
     </footer>
+
+    <script src="./app.js"></script>
   </body>
 </html>
